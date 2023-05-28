@@ -1,0 +1,6 @@
+.snakemake
+00-data
+01-imported
+02-output-dada2-pe-unfiltered
+02-output-dada2-pe-filtered
+03-reports
