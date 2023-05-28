@@ -3,5 +3,5 @@ image: aomlomics/tourmaline:latest
 tasks:
   - name: Initialize
     init: |
-      git clone https://github.com/aomlomics/tourmaline.git /data/tourmaline
+      git clone https://github.com/aomlomics/tourmaline.git
       
