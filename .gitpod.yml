@@ -1,7 +1,9 @@
-image: aomlomics/tourmaline:latest
+image: nfcore/gitpod:latest
 
 tasks:
   - name: Initialize
     init: |
-      git clone https://github.com/aomlomics/tourmaline.git
-      
+      pip install graphviz snakemake fastq-dl pysradb
+      . /opt/conda/etc/profile.d/conda.sh
+      conda activate base
+      #mamba install -y -q -c bioconda
