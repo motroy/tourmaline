@@ -5,8 +5,8 @@ tasks:
     init: |
       pip install graphviz
       . /opt/conda/etc/profile.d/conda.sh
-      wget https://data.qiime2.org/distro/core/qiime2-2021.2-py36-osx-conda.yml
-      conda env create -n qiime2-2021.2 --file qiime2-2021.2-py36-osx-conda.yml
+      wget https://data.qiime2.org/distro/core/qiime2-2021.2-py36-linux-conda.yml
+      conda env create -n qiime2-2021.2 --file qiime2-2021.2-py36-linux-conda.yml
       conda activate qiime2-2021.2
       conda install -c bioconda snakemake biopython muscle clustalo tabulate pandoc tabview
       conda install -c conda-forge deicode
