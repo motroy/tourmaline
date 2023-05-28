@@ -1,15 +1,7 @@
-image: nfcore/gitpod:latest
+image: aomlomics/tourmaline:latest
 
 tasks:
   - name: Initialize
     init: |
-      pip install graphviz snakemake biopython 
-      . /opt/conda/etc/profile.d/conda.sh
-      wget https://data.qiime2.org/distro/core/qiime2-2021.2-py36-linux-conda.yml
-      conda env create -n qiime2-2021.2 --file qiime2-2021.2-py36-linux-conda.yml
-      conda activate qiime2-2021.2
-      conda install -c bioconda muscle clustalo tabulate pandoc tabview
-      conda install -c conda-forge deicode
-      pip install git+https://github.com/biocore/empress.git
-      qiime dev refresh-cache
-      Rscript install.R
+      git clone https://github.com/aomlomics/tourmaline.git /data/tourmaline
+      
