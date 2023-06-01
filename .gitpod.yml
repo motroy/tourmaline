@@ -3,7 +3,8 @@ image: nfcore/gitpod:latest
 tasks:
   - name: Initialize
     init: |
-      pip install graphviz snakemake fastq-dl pysradb
+      pip install graphviz snakemake fastq-dl pysradb udocker
       . /opt/conda/etc/profile.d/conda.sh
       conda activate base
+      udocker install
       #mamba install -y -q -c bioconda
